@@ -1,0 +1,6 @@
+
+train: C:/Users/JAYESH/Desktop/Weapons-and-Knives-Detector-with-YOLOv8/train/images
+val: C:/Users/JAYESH/Desktop/Weapons-and-Knives-Detector-with-YOLOv8/test/images  # Using test as validation
+
+nc: 2
+names: ['guns', 'knife']
