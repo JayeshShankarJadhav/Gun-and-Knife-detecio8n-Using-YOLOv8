@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        img, video {
+            width: 640px;
+            height: 480px;
+            margin-top: 20px;
+            border: 2px solid white;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detection Result</h1>
+    {% if file_type == "image" %}
+        <img src="{{ url_for('show_result', filename=detected_file) }}" alt="Detected Image">
+    {% elif file_type == "video" %}
+        <video controls>
+            <source src="{{ url_for('show_result', filename=detected_file) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    {% endif %}
+    <br>
+    <a href="/" class="btn">Back to Home</a>
+</body>
+</html>
