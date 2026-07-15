@@ -64,7 +64,7 @@ Storage Layer         →  File-based storage (uploads/ and results/ folders)
 
 Due to GitHub's file size limits, the full training dataset and trained model weights are hosted externally instead of in this repository.
 
-📁 **Dataset & Weights (Google Drive):** [Add your Google Drive link here](https://drive.google.com/your-link-here)
+📁 **Dataset & Weights (Google Drive):** https://drive.google.com/drive/folders/1vG8Dlt9tvZjxElg5O6sZKhytfpAa4ueB?usp=sharing
 
 > Replace the link above with your actual shareable Google Drive link (Anyone with the link → Viewer).
 
